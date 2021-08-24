@@ -6,7 +6,8 @@
 5. コンテナにログインされた状態で `firebase login --no-localhost` で firebase CLI にログインします。
 6. `firebase deploy` でデプロイができます。
 
-=== original ===
+---
+▼ 以下オリジナル
 
 # firebase-tools
 
