@@ -1,3 +1,13 @@
+# Docker起動〜デプロイまで
+1. [Docker Desktop](https://www.docker.com/products/docker-desktop) をインストールして起動します。
+2. このリポジトリと同階層に https://github.com/OkuriSae/Utari をCloneします。
+3. このリポジトリで `docker-compose up -d` してコンテナを立ち上げます。
+4. このリポジトリで `docker-compose exec app bash` して立ち上げたコンテナのコンソールに入ります。
+5. コンテナにログインされた状態で `firebase login --no-localhost` で firebase CLI にログインします。
+6. `firebase deploy` でデプロイができます。
+
+=== original ===
+
 # firebase-tools
 
 [Firebase CLI](https://www.npmjs.com/package/firebase-tools) installed globally over the official [NodeJS image](https://hub.docker.com/_/node)
