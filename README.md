@@ -1,10 +1,11 @@
 # Docker起動〜デプロイまで
 1. [Docker Desktop](https://www.docker.com/products/docker-desktop) をインストールして起動します。
-2. このリポジトリと同階層に https://github.com/OkuriSae/Utari をCloneします。
+2. このリポジトリと同階層（このリポジトリ配下では無いです）に https://github.com/OkuriSae/Utari をCloneします。
 3. このリポジトリで `docker-compose up -d` してコンテナを立ち上げます。
 4. このリポジトリで `docker-compose exec app bash` して立ち上げたコンテナのコンソールに入ります。
-5. コンテナにログインされた状態で `firebase login --no-localhost` で firebase CLI にログインします。
-6. `firebase deploy` でデプロイができます。
+5. `ls` で Utari の開発ディレクトリがマウントされていることを確認します。（ `firebase.json` とかがあるはず）
+6. コンテナにログインされた状態で `firebase login --no-localhost` で firebase CLI にログインします。
+7. `firebase deploy` でデプロイができます。
 
 ---
 ▼ 以下オリジナル
